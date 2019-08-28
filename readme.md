@@ -4,4 +4,4 @@ This gets every new post created on reddit, stores the subreddit of the post, an
 
 ![Example Pie Chart](piechart.png)
 
-[Live Example](http://redditpie.laurinneff.ch/piechart.html) (Updated daily at midnight CET)
+[Live Example](http://redditpie.laurinneff.ch/piechart.html) (Updated every 5 minutes)
