@@ -7,13 +7,14 @@ labels = []
 counts = []
 with open('subreddits.txt', 'r') as subreddits:
     subs = subreddits.read().split('\n')
+    postcount = len(subs)
     labels = list(Counter(subs).keys())
     counts = list(Counter(subs).values())
 layout = go.Layout(
     annotations=[
         go.layout.Annotation(
             showarrow=False,
-            text='Rendered on: ' + datetime.utcnow().isoformat() + '+00:00.',
+            text='Rendered on: ' + datetime.utcnow().isoformat() + '+00:00.<br>Dataset size: ' + str(postcount) + ' posts',
             xanchor='right',
             x=1,
             yanchor='top',
